@@ -14,4 +14,9 @@ public class User
 
     [Column("ROLE")]
     public string Role { get; set; }
+
+
 }
+
+
+

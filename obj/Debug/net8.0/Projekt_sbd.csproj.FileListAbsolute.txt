@@ -158,3 +158,4 @@ C:\Users\sofii\source\repos\Projekt_sbd\Projekt_sbd\bin\Debug\net8.0\Microsoft.I
 C:\Users\sofii\source\repos\Projekt_sbd\Projekt_sbd\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\sofii\source\repos\Projekt_sbd\Projekt_sbd\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\sofii\source\repos\Projekt_sbd\Projekt_sbd\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\sofii\source\repos\Projekt_sbd\Projekt_sbd\obj\Debug\net8.0\Projekt_sbd.sourcelink.json

@@ -32,25 +32,7 @@ namespace Projekt_sbd.Controllers
             return Ok(grades);
         }
 
-        // ✅ GET: /api/grades/mine – tylko student, pobiera własne oceny
-        [HttpGet("mine")]
-        [Authorize(Roles = "student")]
-        public IActionResult GetMyGrades()
-        {
-            // Pobieranie ID studenta z roli Claims (musisz mieć to jako claim)
-            var userIdClaim = User.FindFirst(ClaimTypes.NameIdentifier);
-            if (userIdClaim == null) return Unauthorized("Brak identyfikatora użytkownika.");
-
-            int idStudenta = int.Parse(userIdClaim.Value);
-
-            var mojeOceny = _context.Grades
-                .Where(g => g.IdStudent == idStudenta)
-                .Include(g => g.ClassGroup)
-                .Include(g => g.GradeCategory)
-                .ToList();
-
-            return Ok(mojeOceny);
-        }
+       
 
         // ✅ POST: /api/grades – tylko nauczyciel
         [HttpPost]
